@@ -1,0 +1,158 @@
+.grille-principale {
+    color: white;
+    font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+
+        margin-top: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+
+        .icone-appli {
+            background-color: rgb(31, 39, 53);
+            border-radius: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+
+            img {
+                position: relative;
+                height: 4rem;
+            }
+        }
+
+        .titre {
+            flex-grow: 1; // Prend toute la place
+            display: flex;
+            justify-content: center;
+
+            .bulle {
+                background-color: rgb(31, 39, 53);
+                border-radius: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 18rem;
+                height: 4rem;
+                font-size: xx-large;
+            }
+        }
+
+        .session {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .bulle {
+                display: flex;
+                align-items: center;
+                background-color: rgb(31, 39, 53);
+                border-radius: 3rem;
+                height: 4rem;
+                padding-left: 2.8rem;
+                padding-right: 0.8rem;
+
+                .icone-profil {
+                    margin-left: 1.5rem;
+                    height: 3rem;
+                    border-radius: 3rem;
+                }
+            }
+
+        }
+    }
+
+    .content {
+        margin-top: 20vh;
+        display: flex;
+
+        /* Définition du flow de direction + wrap des elements
+        * Equivaut à :
+        * flex-direction: row;
+        * flex-wrap: wrap;
+        */
+        flex-flow: row wrap;
+
+        /* Distribution de la place restante */
+        justify-content: space-around;
+
+        margin-right: 1rem;
+        margin-left: 1rem;
+
+        .jeu {
+            margin-right: 1rem;
+            margin-left: 1rem;
+            margin-top: 5rem;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .image-jeu {
+                border-radius: 1rem;
+                width: 35rem;
+            }
+
+            .bouton {
+                position: relative;
+                top: -3rem;
+                height: 0;
+            }
+
+            .sessions {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+
+                .liste {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+
+                    margin-top: 0.5rem;
+
+                    .icone-profil {
+                        height: 3rem;
+                        margin-right: 0.3rem;
+                        border-radius: 2rem;
+                    }
+
+                    span {
+                        color: rgb(188, 188, 188);
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+
+
+
+// // Mobile : Si plus petit que 480px
+// @media screen and (max-width: 480px) {}
+
+// // Tablette : Si plus petit que 768px
+// @media screen and (max-width: 768px) {}
+
+// // PC portable : Si plus petit que 768px
+// @media screen and (max-width: 768px) {}
+
+// // PC Bureau : Si plus petit que 1024px
+// @media screen and (max-width: 1024px) {}
+
+// // PC Bureau : Si plus petit que 1920px
+// @media screen and (max-width: 1920px) {}
+
+// // PC Bureau : Si plus petit que 1920px
+// @media screen and (max-width: 2400px) {}

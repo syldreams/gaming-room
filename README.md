@@ -1,27 +1,28 @@
 # GamingRoom
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+Partie Front-end avec [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Vous avez besoin de:
 
-## Code scaffolding
+Node JS
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Executez la commande `npm i` 
 
-## Build
+GIT
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Executez la commande `git config --global user.email ToNsPeUdORgItHuB@users.noreply.github.com`
+- Executez la commande `git clone https://github.com/syldreams/gaming-room.git`
 
-## Running unit tests
+Si modification
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Executez la commande `git branch feat/ModifFichierAAA`
+- Executez la commande `git add --all`
+- Executez la commande `git commit -m "J'ai modifié tel fichier"`
+- Executez la commande `git push -u origin feat/ModifFichierAAA`
 
-## Running end-to-end tests
+## Lancer le front-end
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Executez la commande `npm start` puis ouvrez `http://localhost:4200/`.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
