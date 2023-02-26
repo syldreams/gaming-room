@@ -22,7 +22,7 @@
         /*pices / adversaires*/
         1fr
         /*plateau perso*/
-        12rem;
+        14.5rem;
 
 }
 
@@ -63,12 +63,14 @@
 
     overflow-y: auto;
 
+    .pieces{
+        height: 1.5rem;
+    }
+
     .piece {
         height: 1.5rem;
         width: 1.5rem;
     }
-
-    .pieces {}
 
     .reste {
         //background-color: aqua;
@@ -169,6 +171,16 @@
 
     margin-left: 1rem;
     margin-right: 1rem;
+
+    display: flex;
+    justify-content: center;
+
+    .plateau{
+        height: 13.5rem;
+
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
