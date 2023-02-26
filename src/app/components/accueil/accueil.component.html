@@ -17,16 +17,16 @@
 
     <!-- Les jeux -->
     <div class="content">
-        <div class="jeu">
+        <div class="jeu" *ngFor="let jeu of listeJeux">
             <div class="image-jeu">
-                <img src="\assets\images\jeu1.png" alt="">
+                <img [src]="jeu.image" alt="">
             </div>
             <div class="bouton">
-                <button mat-flat-button color="primary">Rejoindre »</button>
+                <button mat-flat-button color="primary" [routerLink]="jeu.rootFront">Rejoindre »</button>
             </div>
             <div class="sessions">
                 <div class="liste">
-                    <span><img class="icone-profil" src="\assets\profils\5d501b271a89aa33ef5263f461cfbbe5.webp" alt=""></span>
+                    <span><img class="icone-profil" [src]="listeUtilisateurs[0].image" alt=""></span>
                     <span><img class="icone-profil" src="\assets\profils\1c922bf597103e4497908f299356b47a.webp" alt=""></span>
                     <span><img class="icone-profil" src="\assets\profils\49f111b89ee9448b51334155e3ea707a.webp" alt=""></span>
                     <span>Session 1</span>

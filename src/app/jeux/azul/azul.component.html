@@ -1,0 +1,74 @@
+<mat-drawer-container class="conteneur" autosize>
+
+    <div class="grille">
+
+        <div class="entete">
+            <span></span>
+            <span class="message">
+                A toi de jouer !
+            </span>
+            <span class="bouton">
+                <button mat-icon-button aria-label="Example icon button with a menu icon" (click)="drawer.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </span>
+
+        </div>
+
+        <div class="pieces_communes">
+            <div class="pieces" *ngFor="let a of [1,2,3,4,5,6,7,8,9]">
+                <img class="piece" src="\assets\jeux\azul\pieces\black.png" alt="">
+                <img class="piece" src="\assets\jeux\azul\pieces\cyan.png" alt="">
+                <img class="piece" src="\assets\jeux\azul\pieces\red.png" alt="">
+                <img class="piece" src="\assets\jeux\azul\pieces\yellow.png" alt="">
+            </div>
+
+            <div class="reste">
+                <div [ngClass]="'l'+index"
+                    *ngFor="let couleur of ['one','yellow','red','black','yellow','cyan','red','yellow','cyan','black']; let index = index">
+                    <img class="piece" [src]="'/assets/jeux/azul/pieces/'+couleur+'.png'" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="adversaires">
+            <div class="sous-grille">
+                <div class="contenu">
+                    <div>
+                        <img style="height: 100%; width: 100%;" src="\assets\jeux\azul\plateau.png" alt="">
+                    </div>
+                    <div>
+                        <img style="height: 100%; width: 100%;" src="\assets\jeux\azul\plateau.png" alt="">
+                    </div>
+                    <div>
+                        <img style="height: 100%; width: 100%;" src="\assets\jeux\azul\plateau.png" alt="">
+                    </div>
+
+                    <div>
+                        <img style="height: 100%; width: 100%;" src="\assets\jeux\azul\plateau.png" alt="">
+                    </div>
+
+                    <div>
+                        <img style="height: 100%; width: 100%;" src="\assets\jeux\azul\plateau.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="plateau-personnel">
+            <span><img style="height: 100%; width: 100%;" src="\assets\jeux\azul\plateau.png" alt=""></span>
+        </div>
+
+    </div>
+
+    <mat-drawer #drawer class="barre-laterale" mode="over" position="end">
+
+        <button class="bouton-quitter" color="warn" routerLink="" mat-raised-button>
+            Quitter
+        </button>
+    </mat-drawer>
+
+
+</mat-drawer-container>
